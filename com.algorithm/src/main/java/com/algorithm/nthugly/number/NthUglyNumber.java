@@ -1,4 +1,4 @@
-package com.algorithm;
+package com.algorithm.nthugly.number;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
