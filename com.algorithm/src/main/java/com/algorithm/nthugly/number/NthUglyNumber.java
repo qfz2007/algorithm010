@@ -8,6 +8,7 @@ import java.util.TreeSet;
 /**
  * 我们把只包含因子 2、3 和 5 的数称作丑数（Ugly Number）。求按从小到大的顺序的第 n 个丑数。
  * 丑数的因子也是丑数
+ * https://leetcode-cn.com/problems/chou-shu-lcof/
  */
 public class NthUglyNumber {
     public static int nthUglyNumber(int n) {

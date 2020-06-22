@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * N叉树的层序遍历,O(n)的时间复杂度
  * 可以使用递归遍历，或者使用广度优先搜索算法
+ * https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/
  */
 public class LevelOrder {
     public List<List<Integer>> levelOrder(Node root) {

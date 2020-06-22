@@ -7,11 +7,12 @@ import java.util.List;
 
 /**
  *  N 叉树的前序遍历（亚马逊在半年内面试中考过）
+ *  https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/description/
  */
 public class PreOrder {
     /**
      * N叉树的前序遍历，
-     * 树的遍历基本上都是使用递归实现的
+     * 树的遍历基本上都是使用递归实现的,下面采用递归实现
      * @param root 节点
      * @return
      */
