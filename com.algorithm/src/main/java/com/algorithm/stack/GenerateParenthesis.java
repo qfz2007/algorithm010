@@ -1,5 +1,6 @@
 package com.algorithm.stack;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,6 +14,6 @@ public class GenerateParenthesis {
      * @return
      */
     public List<String> generateParenthesis(int n) {
-
+        return new ArrayList<>();
     }
 }
