@@ -12,4 +12,8 @@ public class Subsets {
     public List<List<Integer>> subsets(int[] nums) {
         return new ArrayList<>();
     }
+
+    public static void main(String[] args) {
+
+    }
 }
