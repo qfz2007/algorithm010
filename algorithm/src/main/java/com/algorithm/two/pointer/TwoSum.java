@@ -1,4 +1,4 @@
-package com.algorithm.map;
+package com.algorithm.two.pointer;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -17,6 +17,23 @@ import java.util.Map;
  * https://leetcode-cn.com/problems/two-sum/description/
  */
 public class TwoSum {
+    /**
+     * 使用双指针实现
+     * @param nums
+     * @param target
+     * @return
+     */
+    public int[] twoSumByPoint(int[] nums, int target){
+        int twoSum[] = new int[2];
+        return twoSum;
+    }
+
+    /**
+     * 使用map实现
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int[] twoSum(int[] nums, int target){
         Map<Integer, Integer> result = new HashMap<>();
         int twoSum[] = new int[2];

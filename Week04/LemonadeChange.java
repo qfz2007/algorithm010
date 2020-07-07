@@ -1,6 +1,4 @@
-package com.algorithm;
-
-import java.util.Enumeration;
+package com.algorithm.greedy;
 
 /**
  * 在柠檬水摊上，每一杯柠檬水的售价为 5 美元。
