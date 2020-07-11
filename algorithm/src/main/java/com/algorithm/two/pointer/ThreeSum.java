@@ -31,9 +31,12 @@ public class ThreeSum {
         Arrays.sort(nums);
 
         for(int i = 0; i < nums.length; i++){
+            /**跳过相同的元素,避免插入重复的一组三数之和*/
             if(i > 0 && nums[i] == nums[i - 1]){
                 continue;
             }
+
+            /**转变为两树之和问题*/
             this.getList(nums, i, result);
         }
 
@@ -42,29 +45,52 @@ public class ThreeSum {
 
     private void getList(int[] nums, int j, List<List<Integer>> result){
         int m = nums.length - 1;
-        for(int i = j + 1; i < nums.length; i++){
-            if(i >= m){
-                break;
+        int sum = -nums[j];
+        for(int i = 0; i < nums.length; i++){
+            if(j == 3 && i == 2){
+                System.out.println(j);
+            }
+            /**右指针向左逼近*/
+            while (m > i && nums[m] == nums[m - 1]) {
+                m--;
+            }
+
+
+            /**左边指针向右逼近*/
+            if(i < m && nums[i] == nums[i + 1]){
+                continue;
+            }
+
+            if(i == j || j == m){
+                continue;
             }
 
             int temp = nums[i] + nums[m];
-            if(temp == -nums[j]){
+
+            /**因为按照从小到大排序，因此如果最小的和最大之和小于sum,则较小的数的索引要向大的方向移动*/
+            if(temp < sum){
+                i++;
+            }
+
+            /**因为按照从小到大排序，因此如果最小的和最大之和大于sum,则较大的数的索引要向小的方向移动*/
+            if(temp > sum){
+                m--;
+            }
+
+            if(temp == sum){
                 List<Integer> list = new ArrayList<>();
                 list.add(nums[j]);
                 list.add(nums[i]);
                 list.add(nums[m]);
                 result.add(list);
             }
-
-            m--;
         }
     }
 
     public static void main(String[] args) {
         int[] nums = new int[]{-1, 0, 1, 2, -1, -4};
-        nums = new int[]{-1,0,1,2,-1,-4};
-        nums = new int[]{0,0,0,0};
-        nums = new int[]{1,-1,-1,0};
+        //nums = new int[]{0,0,0,0};
+        //nums = new int[]{1,-1,-1,0};
 
         ThreeSum threeSum = new ThreeSum();
         List<List<Integer>> result = threeSum.threeSum(nums);
