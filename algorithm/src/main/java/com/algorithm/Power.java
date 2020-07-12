@@ -38,7 +38,7 @@ public class Power {
     }
 
      /**
-     * 使用分治算法实现,空间复杂度为O(logn)
+     * 使用分治算法实现,空间复杂度为O(logn) 快速幂次
      * @param x
      * @param n
      * @return
@@ -61,6 +61,13 @@ public class Power {
         }
 
         return result;
+    }
+
+    /**
+     * 牛顿迭代法实现
+     */
+    public void  newtonIteration(){
+
     }
 
     public static void main(String[] args) {

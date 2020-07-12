@@ -11,6 +11,9 @@ import java.util.List;
  * https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/
  */
 public class LevelOrder {
+    /**
+     * 这里是使用dfs实现
+     * */
     public List<List<Integer>> levelOrder(Node root) {
         List<List<Integer>> levelList = new ArrayList<>();
         if(root == null) return levelList;
@@ -28,5 +31,13 @@ public class LevelOrder {
         for(Node node : root.children){
             getChildLevel(node, level + 1, levelList);
         }
+    }
+
+    public void bfs(){
+
+    }
+
+    public void iteration(){
+
     }
 }
