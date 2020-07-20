@@ -38,7 +38,7 @@ public class Power {
     }
 
      /**
-     * 使用分治算法实现,空间复杂度为O(logn) 快速幂次
+     * 使用分治算法实现,空间复杂度为O(logn)
      * @param x
      * @param n
      * @return
@@ -60,6 +60,39 @@ public class Power {
             result = 1.0 / result;
         }
 
+        result = x < 0 ? 1 / result : result;
+
+        return result;
+    }
+
+    /**
+     * 迭代+快速幂次
+     *
+     * @param x
+     * @param n
+     * @return
+     */
+    public double quickMul(double x, long n) {
+        double result = 1.0;
+
+        long m = n < 0 ? -n : n;
+        while (m > 0){
+            System.out.println("m="+ m);
+            /**这里采用位运算是否进行多乘以一个x*/
+            if((m & 1) == 1){
+                System.out.println("x="+ x);
+                result *= x;
+            }
+
+            /** x = x^2x=x*/
+            x *= x;
+
+            /**向左移动一位就是相当于除以2*/
+            m = m >> 1;
+        }
+
+        result = n < 0 ? 1 / result : result;
+
         return result;
     }
 
@@ -72,7 +105,7 @@ public class Power {
 
     public static void main(String[] args) {
         Power power = new Power();
-        double result = power.myPow(2.10000,3);
+        double result = power.quickMul(2,3);
         System.out.println(result);
     }
 }
