@@ -30,37 +30,94 @@ public class NumDecodings {
      * @return
      */
     public int numDecodings(String s) {
-        int[] dp = new int[s.length()];
-
         if(s == null || s.length() == 0 || s.charAt(0) == '0') return 0;
 
+        /**状态定义*/
         char[] charArray = s.toCharArray();
-        for(int i = 0; i < charArray.length; i++){
-            if(charArray[i - 1] != 0){
-                if(charArray[i - 1] == 1){
-                    dp[i] += dp[i - 1] + 1;
-                } else if(charArray[i - 1] == 2){
+        int[] dp = new int[s.length() + 1];
+        dp[0]=1; //一个数时，只有一个接
+
+
+//        int n = s.length();
+//        if (n == 0 || s.charAt(0) == '0')     return 0;
+//        int[] dp = new int [n + 1];
+//        dp[0] = 1;
+//        dp[1] = 1;
+
+        /**
+         * 分解为子问题，
+         * 1、前一个为0的情况，
+         * 2、前一个不为0的情况
+         * 3、当前字符是否为0的情况
+         * 4、当前字符是否不为0的情况
+         */
+        for(int i = 1; i < charArray.length; i++){
+            if(charArray[i] == '0'){
+                dp[i] = dp[i - 1];
+            }
+
+            if(charArray[i - 1] == '0'){
+                dp[i] = dp[i - 1] ;
+            } else{
+                if(charArray[i - 1] == '1'){
+                    dp[i] += dp[i - 1] + dp[i - 2];
+                } else if(charArray[i - 1] == '2'){
                     if(charArray[i] <= 6){
-                        dp[i] += dp[i - 1] + 1;
+                        dp[i] = dp[i - 1] + dp[i - 2];
                     }
                 } else{
-                    dp[i] += dp[i - 1];
+                    dp[i] = dp[i - 2];
                 }
-            } else{
-                if(charArray[i] != 0){
-                    if(charArray[i - 1] == 1){
-                        dp[i] += dp[i - 1];
-                    }
+            }
 
-                    if(charArray[i - 1] == 2){
-                        dp[i] += dp[i - 1];
-                    }
-                }
+
+            if (s.charAt(i - 2) == '1' || s.charAt(i - 2) == '2' && s.charAt(i - 1) <= '6') {
+                dp[i] += dp[i - 2];
+            }
+
+            if (s.charAt(i - 1) != '0') {
+                dp[i] += dp[i - 1];
             }
         }
 
-        return dp[0];
+        return dp[s.length()];
     }
+
+    public int numDecodings1(String s) {
+        if ("0".equals(s) || s.charAt(0) == '0') {
+            return 0;
+        }
+        //dp[i]表示到字符串s下标i处时最多有几种解码方式
+        int[] dp = new int[s.length()];
+        //动态方程
+        if (s.charAt(0) != '0') {
+            dp[0] = 1;
+        }
+        for (int i = 1; i < s.length(); i++) {
+            //无法解析的情况
+            if (s.charAt(i) == '0' && (s.charAt(i - 1) > '2' || s.charAt(i - 1) == '0')) {
+                return 0;
+                //当前后2位是10或20
+            } else if (s.charAt(i) == '0' && (s.charAt(i - 1) == '1' || s.charAt(i - 1) == '2')) {
+                if (i > 1) {
+                    dp[i] = dp[i - 2];
+                } else {
+                    dp[i] = 1;
+                }
+                //当前后2位是21-26或11-19
+            } else if ((s.charAt(i - 1) == '2' && s.charAt(i) > '0' && s.charAt(i) <= '6') || (s.charAt(i - 1) == '1')) {
+                if (i > 1) {
+                    dp[i] = dp[i - 1] + dp[i - 2];
+                } else {
+                    dp[i] = dp[i - 1] + 1;
+                }
+            } else {
+                dp[i] = dp[i - 1];
+            }
+        }
+        return dp[s.length() - 1];
+    }
+
 
     public static void main(String[] args) {
         String s = "226";
