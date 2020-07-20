@@ -1,6 +1,9 @@
-package com.algorithm;
+package com.algorithm.backtracking;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 给定一个可包含重复数字的序列，返回所有不重复的全排列。

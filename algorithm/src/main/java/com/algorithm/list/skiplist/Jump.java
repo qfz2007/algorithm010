@@ -1,4 +1,4 @@
-package com.algorithm;
+package com.algorithm.list.skiplist;
 
 /**
  * 输入: [2,3,1,1,4]
