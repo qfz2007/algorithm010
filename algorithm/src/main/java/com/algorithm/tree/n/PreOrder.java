@@ -1,4 +1,4 @@
-package com.algorithm.tree.ntree;
+package com.algorithm.tree.n;
 
 import com.algorithm.tree.Node;
 

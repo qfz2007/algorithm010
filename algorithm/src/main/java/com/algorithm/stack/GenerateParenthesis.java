@@ -16,5 +16,10 @@ public class GenerateParenthesis {
      */
     public List<String> generateParenthesis(int n) {
         return new ArrayList<>();
+
+    }
+
+    public static void main(String[] args) {
+
     }
 }
