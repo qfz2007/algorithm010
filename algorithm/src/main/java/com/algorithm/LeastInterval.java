@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个用字符数组表示的 CPU 需要执行的任务列表。其中包含使用大写的 A - Z 字母表示的26 种不同种类的任务。任务可以以任意顺序执行，并且每个任务都可以在 1 个单位时间内执行完。CPU 在任何一个单位时间内都可以执行一个任务，或者在待命状态。
  *
@@ -27,10 +29,14 @@ package com.algorithm;
  */
 public class LeastInterval {
     public int leastInterval(char[] tasks, int n) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        char[] tasks = new char[]{'A','A','A','B','B','B'}; int n = 2;
+        LeastInterval leastInterval = new LeastInterval();
+        int result = leastInterval.leastInterval(tasks, n);
+        AlgorithmUtil.println(result);
     }
 }

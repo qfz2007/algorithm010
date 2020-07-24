@@ -1,7 +1,10 @@
 package com.algorithm.two.pointer;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -107,13 +110,6 @@ public class FourSum {
         int target = 0;
         FourSum fourSum = new FourSum();
         List<List<Integer>> result = fourSum.fourSum(nums, target);
-        for(List<Integer> list : result){
-            StringBuilder stringBuilder = new StringBuilder();
-            for(Integer num : list){
-                stringBuilder.append(num).append("  ");
-            }
-
-            System.out.println(stringBuilder.toString());
-        }
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

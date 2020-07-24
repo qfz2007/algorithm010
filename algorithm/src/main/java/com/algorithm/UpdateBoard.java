@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 让我们一起来玩扫雷游戏！
  *
@@ -67,10 +69,20 @@ package com.algorithm;
  */
 public class UpdateBoard {
     public char[][] updateBoard(char[][] board, int[] click) {
-
+        char[][] result = new char[][]{};
+        return result;
     }
 
     public static void main(String[] args) {
-
+        char[][] board = new char[][]{
+                {'E', 'E', 'E', 'E', 'E'},
+                {'E', 'E', 'M', 'E', 'E'},
+                {'E', 'E', 'E', 'E', 'E'},
+                {'E', 'E', 'E', 'E', 'E'}
+        };
+        int[] click = new int[]{1,2};
+        UpdateBoard updateBoard = new UpdateBoard();
+        char[][] result = updateBoard.updateBoard(board, click);
+        AlgorithmUtil.println(result);
     }
 }

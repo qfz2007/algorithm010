@@ -1,5 +1,7 @@
 package com.algorithm.greedy;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 在柠檬水摊上，每一杯柠檬水的售价为 5 美元。
  *
@@ -74,6 +76,6 @@ public class LemonadeChange {
         bills = new int[]{5,5,5,5,20,20,5,5,5,5};
         LemonadeChange lemonadeChange = new LemonadeChange();
         boolean result = lemonadeChange.lemonadeChange(bills);
-        System.out.println("result="+result);
+        AlgorithmUtil.println(result);
     }
 }

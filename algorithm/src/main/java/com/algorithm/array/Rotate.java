@@ -33,6 +33,9 @@ public class Rotate {
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{-1,-100,3,99};
+        int k = 2;
+        Rotate rotate = new Rotate();
+        rotate.rotate(nums, k);
     }
 }

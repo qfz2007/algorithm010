@@ -1,4 +1,4 @@
-package com.algorithm.tree;
+package com.algorithm.define;
 
 public class TreeNode {
     public int val;

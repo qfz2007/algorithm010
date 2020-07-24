@@ -1,6 +1,9 @@
 package com.algorithm.divide.and.conquer;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -42,6 +45,9 @@ public class SolveNQueens {
     }
 
     public static void main(String[] args) {
-
+        int n = 4;
+        SolveNQueens solveNQueens = new SolveNQueens();
+        List<List<String>> result = solveNQueens.solveNQueens(n);
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

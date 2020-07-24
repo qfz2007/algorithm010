@@ -1,5 +1,7 @@
 package com.algorithm.greedy;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  *给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。
  *
@@ -54,6 +56,6 @@ public class MaxProfit {
         prices = new int[]{7,6,4,3,1};
         MaxProfit maxProfit = new MaxProfit();
         int result = maxProfit.maxProfit(prices);
-        System.out.println("result="+result);
+        AlgorithmUtil.println(result);
     }
 }

@@ -1,5 +1,7 @@
 package com.algorithm.array;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 nums1 成为一个有序数组。
  *
@@ -28,6 +30,12 @@ public class Merge {
     }
 
     public static void main(String[] args) {
-
+        int[] nums1 = new int[]{1,2,3,0,0,0};
+        int m = 3;
+        int[] nums2 = new int[]{2,5,6};
+        int n = 3;
+        Merge merge = new Merge();
+        merge.merge(nums1, m, nums2, n);
+        AlgorithmUtil.println(nums1);
     }
 }

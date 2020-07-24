@@ -1,4 +1,4 @@
-package com.algorithm.queue;
+package com.algorithm.define;
 
 /**
  * 设计实现双端队列。

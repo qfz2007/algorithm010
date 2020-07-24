@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 假设按照升序排序的数组在预先未知的某个点上进行了旋转。
  *
@@ -23,10 +25,14 @@ package com.algorithm;
  */
 public class FindMin {
     public int findMin(int[] nums) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{3,4,5,1,2};
+        FindMin findMin = new FindMin();
+        int result = findMin.findMin(nums);
+        AlgorithmUtil.println(result);
     }
 }

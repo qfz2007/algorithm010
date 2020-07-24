@@ -1,5 +1,10 @@
 package com.algorithm;
 
+
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -32,10 +37,22 @@ import java.util.List;
  */
 public class FindWordsII {
     public List<String> findWords(char[][] board, String[] words) {
-
+        List<String> result = new ArrayList<>();
+        return result;
     }
 
     public static void main(String[] args) {
-
+        char[][] board = new char[][]{
+                {'o','a','a','n'},
+                {'e','t','a','e'},
+                {'i','h','k','r'},
+                {'i','f','l','v'}
+        };
+        String[] words = new String[]{
+                "oath","pea","eat","rain"
+        };
+        FindWordsII findWordsII = new FindWordsII();
+        List<String> result = findWordsII.findWords(board, words);
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

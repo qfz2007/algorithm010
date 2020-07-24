@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 班上有 N 名学生。其中有些人是朋友，有些则不是。他们的友谊具有是传递性。如果已知 A 是 B 的朋友，B 是 C 的朋友，那么我们可以认为 A 也是 C 的朋友。所谓的朋友圈，是指所有朋友的集合。
  *
@@ -34,10 +36,16 @@ package com.algorithm;
  */
 public class FindCircleNum {
     public int findCircleNum(int[][] M) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
+        int[][] M = new int[][]{
 
+        };
+        FindCircleNum findCircleNum = new FindCircleNum();
+        int result = findCircleNum.findCircleNum(M);
+        AlgorithmUtil.println(result);
     }
 }

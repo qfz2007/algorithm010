@@ -1,4 +1,6 @@
-package stack;
+package com.algorithm.define;
+
+import com.algorithm.util.AlgorithmUtil;
 
 /**
  * 设计一个支持 push ，pop ，top 操作，并能在常数时间内检索到最小元素的栈。
@@ -52,23 +54,21 @@ public class MinStack {
     }
 
     public int top() {
-
+        return 0;
     }
 
     public int getMin() {
-
+        return 0;
     }
 
-    /**
-     * Your MinStack object will be instantiated and called as such:
-     * MinStack obj = new MinStack();
-     * obj.push(x);
-     * obj.pop();
-     * int param_3 = obj.top();
-     * int param_4 = obj.getMin();
-     */
-
     public static void main(String[] args) {
-
+        int x = 0;
+        MinStack obj = new MinStack();
+        obj.push(x);
+        obj.pop();
+        int param_3 = obj.top();
+        int param_4 = obj.getMin();
+        AlgorithmUtil.println(param_3);
+        AlgorithmUtil.println(param_4);
     }
 }

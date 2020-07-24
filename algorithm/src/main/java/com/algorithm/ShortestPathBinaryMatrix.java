@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 在一个 N × N 的方形网格中，每个单元格有两种状态：空（0）或者阻塞（1）。
  *
@@ -37,10 +39,16 @@ package com.algorithm;
  */
 public class ShortestPathBinaryMatrix {
     public int shortestPathBinaryMatrix(int[][] grid) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[][] grid = new int[][]{
+                {0,0,0},{1,1,0},{1,1,0}
+        };
+        ShortestPathBinaryMatrix shortestPathBinaryMatrix = new ShortestPathBinaryMatrix();
+        int result = shortestPathBinaryMatrix.shortestPathBinaryMatrix(grid);
+        AlgorithmUtil.println(result);
     }
 }

@@ -1,5 +1,9 @@
 package com.algorithm.backtracking;
 
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -21,10 +25,14 @@ import java.util.List;
  */
 public class Permute {
     public List<List<Integer>> permute(int[] nums) {
-
+        List<List<Integer>> result = new ArrayList<>();
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{1,2,3};
+        Permute permute = new Permute();
+        List<List<Integer>> result = permute.permute(nums);
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

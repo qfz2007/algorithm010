@@ -1,5 +1,7 @@
 package com.algorithm.anagrams;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定两个字符串 s 和 t ，编写一个函数来判断 t 是否是 s 的字母异位词。
  * https://leetcode-cn.com/problems/valid-anagram/description/
@@ -11,7 +13,7 @@ public class Anagram {
      * @param t
      * @return
      */
-    public static boolean isAnagram(String s, String t) {
+    public boolean isAnagram(String s, String t) {
         if(t == null){
             return false;
         }
@@ -49,7 +51,10 @@ public class Anagram {
     public static void main(String[] args) {
         String s = "aacc";
         String t = "ccac";
-        System.out.println(Anagram.isAnagram(s, t));
+
+        Anagram anagram = new Anagram();
+        boolean result = anagram.isAnagram(s, t);
+        AlgorithmUtil.println(result);
     }
 }
 

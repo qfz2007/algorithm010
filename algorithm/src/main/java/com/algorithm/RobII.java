@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 你是一个专业的小偷，计划偷窃沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都围成一圈，这意味着第一个房屋和最后一个房屋是紧挨着的。同时，相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。
  *
@@ -22,10 +24,14 @@ package com.algorithm;
  */
 public class RobII {
     public int rob(int[] nums) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{1,2,3,1};
+        RobII robII = new RobII();
+        int result = robII.rob(nums);
+        AlgorithmUtil.println(result);
     }
 }

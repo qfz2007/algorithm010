@@ -1,5 +1,9 @@
 package com.algorithm.list;
 
+import com.algorithm.define.ListNode;
+import com.algorithm.util.AlgorithmUtil;
+import com.algorithm.util.TreeUtil;
+
 /**
  * 给你一个链表，每 k 个节点一组进行翻转，请你返回翻转后的链表。
  *
@@ -27,10 +31,18 @@ package com.algorithm.list;
  */
 public class ReverseKGroup {
     public ListNode reverseKGroup(ListNode head, int k) {
-
+        ListNode result = null;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        Integer[] nums = new Integer[]{
+                1,2,3,4,5
+        };
+        ListNode head = TreeUtil.generateListNode(nums);
+        int k = 2;
+        ReverseKGroup reverseKGroup = new ReverseKGroup();
+        ListNode result = reverseKGroup.reverseKGroup(head, k);
+        AlgorithmUtil.println(result);
     }
 }

@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定两个字符串 text1 和 text2，返回这两个字符串的最长公共子序列的长度。
  *
@@ -40,10 +42,15 @@ package com.algorithm;
  */
 public class LongestCommonSubsequence {
     public int longestCommonSubsequence(String text1, String text2) {
-
+        int result = 0;
+        return 0;
     }
 
     public static void main(String[] args) {
-
+        String text1 = "abc";
+        String text2 = "def";
+        LongestCommonSubsequence longestCommonSubsequence = new LongestCommonSubsequence();
+        int result = longestCommonSubsequence.longestCommonSubsequence(text1, text2);
+        AlgorithmUtil.println(result);
     }
 }

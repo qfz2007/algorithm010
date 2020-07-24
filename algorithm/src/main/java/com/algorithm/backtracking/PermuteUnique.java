@@ -1,9 +1,8 @@
 package com.algorithm.backtracking;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.*;
 
 /**
  * 给定一个可包含重复数字的序列，返回所有不重复的全排列。
@@ -60,6 +59,7 @@ public class PermuteUnique {
     public static void main(String[] args) {
         int[] nums = new int[]{1,1,2};
         PermuteUnique permuteUnique = new PermuteUnique();
-        permuteUnique.permuteUnique(nums);
+        List<List<Integer>> result = permuteUnique.permuteUnique(nums);
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

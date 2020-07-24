@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定不同面额的硬币和一个总金额。写出函数来计算可以凑成总金额的硬币组合数。假设每一种面额的硬币有无限个。
  *
@@ -41,10 +43,17 @@ package com.algorithm;
  */
 public class Change {
     public int change(int amount, int[] coins) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int amount = 5;
+        int[] coins = new int[]{
+                1, 2, 5
+        };
+        Change change = new Change();
+        int result = change.change(amount, coins);
+        AlgorithmUtil.println(result);
     }
 }

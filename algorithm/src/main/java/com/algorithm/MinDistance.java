@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给你两个单词 word1 和 word2，请你计算出将 word1 转换成 word2 所使用的最少操作数 。
  *
@@ -35,6 +37,15 @@ package com.algorithm;
  */
 public class MinDistance {
     public int minDistance(String word1, String word2) {
+        int result = 0;
+        return result;
+    }
 
+    public static void main(String[] args) {
+        String word1 = "horse";
+        String word2 = "ros";
+        MinDistance minDistance = new MinDistance();
+        int result = minDistance.minDistance(word1, word2);
+        AlgorithmUtil.println(result);
     }
 }

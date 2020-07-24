@@ -1,6 +1,7 @@
 package com.algorithm.tree.binary;
 
-import com.algorithm.tree.TreeNode;
+import com.algorithm.define.TreeNode;
+import com.algorithm.util.AlgorithmUtil;
 
 
 /**
@@ -23,7 +24,7 @@ public class BuildTree {
      * @param inorder   中序遍历树
      * @return
      */
-    public  TreeNode buildTree(int[] preorder, int[] inorder) {
+    public TreeNode buildTree(int[] preorder, int[] inorder) {
         TreeNode root = null;
         if(preorder.length == 0 || inorder.length == 0){
             return root;
@@ -65,6 +66,7 @@ public class BuildTree {
         int[] inorder = new int[]{9,3,15,20,7};
         BuildTree buildTree = new BuildTree();
         TreeNode root = buildTree.buildTree(preorder, inorder);
+        AlgorithmUtil.println(root);
     }
 }
 

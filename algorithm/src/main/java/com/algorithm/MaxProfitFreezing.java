@@ -18,10 +18,13 @@ package com.algorithm;
  */
 public class MaxProfitFreezing {
     public int maxProfit(int[] prices) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] prices = new int[]{1,2,3,0,2};
+        MaxProfitFreezing maxProfitFreezing = new MaxProfitFreezing();
+        int result = maxProfitFreezing.maxProfit(prices);
     }
 }

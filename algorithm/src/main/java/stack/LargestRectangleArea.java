@@ -1,5 +1,7 @@
 package stack;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定 n 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。
  *
@@ -23,10 +25,14 @@ package stack;
  */
 public class LargestRectangleArea {
     public int largestRectangleArea(int[] heights) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] heights = new int[]{2,1,5,6,2,3};
+        LargestRectangleArea largestRectangleArea = new LargestRectangleArea();
+        int result = largestRectangleArea.largestRectangleArea(heights);
+        AlgorithmUtil.println(result);
     }
 }

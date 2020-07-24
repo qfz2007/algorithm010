@@ -1,4 +1,4 @@
-package com.algorithm.heap;
+package com.algorithm.define;
 
 /**
  * 堆排序的自我实现

@@ -1,5 +1,7 @@
 package com.algorithm.divide.and.conquer;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 实现 pow(x, n) ，即计算 x 的 n 次幂函数。
  实现 pow(x, n) ，即计算 x 的 n 次幂函数。
@@ -106,6 +108,6 @@ public class Power {
     public static void main(String[] args) {
         Power power = new Power();
         double result = power.quickMul(2,3);
-        System.out.println(result);
+        AlgorithmUtil.println(result);
     }
 }

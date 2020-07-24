@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 实现 int sqrt(int x) 函数。
  *
@@ -23,10 +25,14 @@ package com.algorithm;
  */
 public class MySqrt {
     public int mySqrt(int x) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int x = 4;
+        MySqrt mySqrt = new MySqrt();
+        int result = mySqrt.mySqrt(x);
+        AlgorithmUtil.println(result);
     }
 }

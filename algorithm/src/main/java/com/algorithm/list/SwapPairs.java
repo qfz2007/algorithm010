@@ -1,5 +1,8 @@
 package com.algorithm.list;
 
+import com.algorithm.define.ListNode;
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
  *
@@ -14,10 +17,14 @@ package com.algorithm.list;
  */
 public class SwapPairs {
     public ListNode swapPairs(ListNode head) {
-
+        ListNode result = null;
+        return  result;
     }
 
     public static void main(String[] args) {
-
+        ListNode head = null;
+        SwapPairs swapPairs = new SwapPairs();
+        ListNode result = swapPairs.swapPairs(head);
+        AlgorithmUtil.println(result);
     }
 }

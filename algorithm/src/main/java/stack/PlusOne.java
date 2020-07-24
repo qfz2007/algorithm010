@@ -1,5 +1,7 @@
 package stack;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。
  *
@@ -23,10 +25,14 @@ package stack;
  */
 public class PlusOne {
     public int[] plusOne(int[] digits) {
-
+        int[] result = new int[]{};
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] digits = new int[]{1,2,3};
+        PlusOne plusOne = new PlusOne();
+        int[] result = plusOne.plusOne(digits);
+        AlgorithmUtil.println(result);
     }
 }

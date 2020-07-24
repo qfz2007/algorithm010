@@ -1,6 +1,9 @@
 package com.algorithm.backtracking;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -55,6 +58,7 @@ public class Combine {
 
     public static void main(String[] args) {
         Combine combine = new Combine();
-        combine.combine(4,2);
+        List<List<Integer>> result = combine.combine(4,2);
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

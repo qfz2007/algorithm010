@@ -1,6 +1,4 @@
-package com.algorithm.tree.binary;
-
-import com.algorithm.tree.TreeNode;
+package com.algorithm.util;
 
 public class GenerateBinary {
     /**
@@ -20,4 +18,5 @@ public class GenerateBinary {
         root.right = new TreeNode(nums[2 * level]);
         return null;
     }
+    
 }

@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 假设按照升序排序的数组在预先未知的某个点上进行了旋转。
  *
@@ -25,6 +27,15 @@ package com.algorithm;
  */
 public class Search {
     public int search(int[] nums, int target) {
+        int result = 0;
+        return result;
+    }
 
+    public static void main(String[] args) {
+        int[] nums = new int[]{4,5,6,7,0,1,2};
+        int target = 0;
+        Search search = new Search();
+        int result = search.search(nums, target);
+        AlgorithmUtil.println(result);
     }
 }

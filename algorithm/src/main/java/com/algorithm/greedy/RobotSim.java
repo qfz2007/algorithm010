@@ -1,5 +1,7 @@
 package com.algorithm.greedy;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 机器人在一个无限大小的网格上行走，从点 (0, 0) 处开始出发，面向北方。该机器人可以接收以下三种类型的命令：
  *
@@ -40,10 +42,6 @@ package com.algorithm.greedy;
 public class RobotSim {
     public int robotSim(int[] commands, int[][] obstacles) {
         int result = 0;
-
-
-
-
         return result;
     }
 
@@ -53,6 +51,6 @@ public class RobotSim {
 
         RobotSim robotSim = new RobotSim();
         int result = robotSim.robotSim(commands, obstacles);
-        System.out.println("result="+result);
+        AlgorithmUtil.println(result);
     }
 }

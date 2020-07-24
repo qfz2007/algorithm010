@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给你一个字符串 S、一个字符串 T，请在字符串 S 里面找出：包含 T 所有字符的最小子串。
  *
@@ -17,10 +19,15 @@ package com.algorithm;
  */
 public class MinWindow {
     public String minWindow(String s, String t) {
-
+        String result = "";
+        return result;
     }
 
     public static void main(String[] args) {
-
+        String s = "ADOBECODEBANC";
+        String t = "ABC";
+        MinWindow minWindow = new MinWindow();
+        String result = minWindow.minWindow(s, t);
+        AlgorithmUtil.println(result);
     }
 }

@@ -1,15 +1,11 @@
 package com.algorithm.recursive.fibonacci;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
- *
- * 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
- *
- * 注意：给定 n 是一个正整数。
- * https://leetcode-cn.com/problems/climbing-stairs/
  * 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
  *
  * 每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？
@@ -31,6 +27,8 @@ import java.util.Map;
  * 1.  1 阶 + 1 阶 + 1 阶
  * 2.  1 阶 + 2 阶
  * 3.  2 阶 + 1 阶
+ *
+ * https://leetcode-cn.com/problems/climbing-stairs/
  */
 public class ClimbStairs {
     private Map<Integer, Integer> countMap = new HashMap<>();
@@ -64,7 +62,7 @@ public class ClimbStairs {
 
     public static void main(String[] args) {
         ClimbStairs climbStairs = new ClimbStairs();
-        int count = climbStairs.climbStairs(2);
-        System.out.println("count="+ count);
+        int result = climbStairs.climbStairs(2);
+        AlgorithmUtil.println(result);
     }
 }

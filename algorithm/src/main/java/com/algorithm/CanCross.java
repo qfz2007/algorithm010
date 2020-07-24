@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 一只青蛙想要过河。 假定河流被等分为 x 个单元格，并且在每一个单元格内都有可能放有一石子（也有可能没有）。 青蛙可以跳上石头，但是不可以跳入水中。
  *
@@ -41,10 +43,16 @@ package com.algorithm;
  */
 public class CanCross {
     public boolean canCross(int[] stones) {
-
+        boolean result = false;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] stones = new int[]{
+                0,1,3,5,6,8,12,17
+        };
+        CanCross canCross = new CanCross();
+        boolean result = canCross.canCross(stones);
+        AlgorithmUtil.println(result);
     }
 }

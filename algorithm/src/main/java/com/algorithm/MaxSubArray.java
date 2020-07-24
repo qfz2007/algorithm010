@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
  *
@@ -17,10 +19,16 @@ package com.algorithm;
  */
 public class MaxSubArray {
     public int maxSubArray(int[] nums) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{
+                -2,1,-3,4,-1,2,1,-5,4
+        };
+        MaxSubArray maxSubArray = new MaxSubArray();
+        int result = maxSubArray.maxSubArray(nums);
+        AlgorithmUtil.println(result);
     }
 }

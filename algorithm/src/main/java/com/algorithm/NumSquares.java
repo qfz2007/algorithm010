@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定正整数 n，找到若干个完全平方数（比如 1, 4, 9, 16, ...）使得它们的和等于 n。你需要让组成和的完全平方数的个数最少。
  *
@@ -19,10 +21,14 @@ package com.algorithm;
  */
 public class NumSquares {
     public int numSquares(int n) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int n = 13;
+        NumSquares numSquares = new NumSquares();
+        int result = numSquares.numSquares(n);
+        AlgorithmUtil.println(result);
     }
 }

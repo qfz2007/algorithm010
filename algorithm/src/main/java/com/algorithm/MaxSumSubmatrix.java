@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个非空二维矩阵 matrix 和一个整数 k，找到这个矩阵内部不大于 k 的最大矩形和。
  *
@@ -18,10 +20,17 @@ package com.algorithm;
  */
 public class MaxSumSubmatrix {
     public int maxSumSubmatrix(int[][] matrix, int k) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[][] matrix = new int[][]{
+                {1,0,1},{0,-2,3}
+        };
+        int k = 2;
+        MaxSumSubmatrix maxSumSubmatrix = new MaxSumSubmatrix();
+        int result = maxSumSubmatrix.maxSumSubmatrix(matrix, k);
+        AlgorithmUtil.println(result);
     }
 }

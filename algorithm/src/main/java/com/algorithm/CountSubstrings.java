@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个字符串，你的任务是计算这个字符串中有多少个回文子串。
  *
@@ -25,10 +27,14 @@ package com.algorithm;
  */
 public class CountSubstrings {
     public int countSubstrings(String s) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        String s = "abc";
+        CountSubstrings countSubstrings = new CountSubstrings();
+        int result = countSubstrings.countSubstrings(s);
+        AlgorithmUtil.println(result);
     }
 }

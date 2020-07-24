@@ -29,6 +29,13 @@ public class SolveSudoku {
     }
 
     public static void main(String[] args) {
+        char[][] board = new char[][]{
+                {1, 2, 3, 4, 5, 6, 7, 8, 9},
+                {1, 2, 3, 4, 5, 6, 7, 8, 9},
+                {1, 2, 3, 4, 5, 6, 7, 8, 9}
+        };
 
+        SolveSudoku solveSudoku = new SolveSudoku();
+        solveSudoku.solveSudoku(board);
     }
 }

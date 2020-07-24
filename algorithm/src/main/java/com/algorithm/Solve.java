@@ -31,6 +31,13 @@ public class Solve {
     }
 
     public static void main(String[] args) {
-
+        char[][] board = new char[][]{
+                {'X','X','X','X'},
+                {'X','O','O','X'},
+                {'X','X','O','X'},
+                {'X','O','X','X'},
+        };
+        Solve solve = new Solve();
+        solve.solve(board);
     }
 }

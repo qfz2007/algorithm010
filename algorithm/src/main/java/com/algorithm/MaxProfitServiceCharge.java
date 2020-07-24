@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个整数数组 prices，其中第 i 个元素代表了第 i 天的股票价格 ；非负整数 fee 代表了交易股票的手续费用。
  *
@@ -30,10 +32,17 @@ package com.algorithm;
  */
 public class MaxProfitServiceCharge {
     public int maxProfit(int[] prices, int fee) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] prices = new int[]{
+                1, 3, 2, 8, 4, 9
+        };
+        int fee = 0;
+        MaxProfitServiceCharge maxProfitServiceCharge = new MaxProfitServiceCharge();
+        int result = maxProfitServiceCharge.maxProfit(prices, fee);
+        AlgorithmUtil.println(result);
     }
 }

@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给你一个整数数组 nums ，请你找出数组中乘积最大的连续子数组（该子数组中至少包含一个数字），并返回该子数组所对应的乘积。
  *
@@ -21,10 +23,14 @@ package com.algorithm;
  */
 public class MaxProduct {
     public int maxProduct(int[] nums) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{2,3,-2,4};
+        MaxProduct maxProduct = new MaxProduct();
+        int result = maxProduct.maxProduct(nums);
+        AlgorithmUtil.println(result);
     }
 }

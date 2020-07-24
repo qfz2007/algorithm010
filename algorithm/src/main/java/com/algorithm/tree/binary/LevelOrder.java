@@ -1,8 +1,11 @@
 package com.algorithm.tree.binary;
 
-import com.algorithm.tree.TreeNode;
+import com.algorithm.define.TreeNode;
+import com.algorithm.util.AlgorithmUtil;
+import com.algorithm.util.TreeUtil;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -90,12 +93,12 @@ public class LevelOrder {
     }
 
     public static void main(String[] args) {
-        TreeNode treeNode = new TreeNode(3);
-        treeNode.left = new TreeNode(9);
-        treeNode.right = new TreeNode(20);
-        treeNode.right.left = new TreeNode(15);
-        treeNode.right.right = new TreeNode(7);
+        Integer[] nums = new Integer[]{
+                3,9,20,null,null,15,7
+        };
+        TreeNode treeNode = TreeUtil.generateTreeNode(nums);
         LevelOrder levelOrder = new LevelOrder();
-        levelOrder.bfsLevelOrder(treeNode);
+        List<List<Integer>> result = levelOrder.bfsLevelOrder(treeNode);
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

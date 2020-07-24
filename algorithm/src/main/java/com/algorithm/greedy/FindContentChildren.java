@@ -1,5 +1,7 @@
 package com.algorithm.greedy;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.Arrays;
 
 /**
@@ -75,6 +77,6 @@ public class FindContentChildren {
         s = new int[]{1,2,3};
         FindContentChildren findContentChildren = new FindContentChildren();
         int result = findContentChildren.findContentChildren(g, s);
-        System.out.println("result="+result);
+        AlgorithmUtil.println(result);
     }
 }

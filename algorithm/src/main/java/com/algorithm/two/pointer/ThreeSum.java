@@ -1,7 +1,10 @@
 package com.algorithm.two.pointer;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -94,15 +97,6 @@ public class ThreeSum {
 
         ThreeSum threeSum = new ThreeSum();
         List<List<Integer>> result = threeSum.threeSum(nums);
-        if(result != null && result.size() > 0){
-            for(List<Integer> list : result){
-                StringBuilder builder = new StringBuilder();
-                for (int i : list){
-                    builder.append(i).append(",");
-                }
-
-                System.out.println(builder.toString());
-            }
-        }
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

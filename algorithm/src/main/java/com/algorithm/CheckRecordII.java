@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个正整数 n，返回长度为 n 的所有可被视为可奖励的出勤记录的数量。 答案可能非常大，你只需返回结果mod 109 + 7的值。
  *
@@ -26,10 +28,14 @@ package com.algorithm;
  */
 public class CheckRecordII {
     public int checkRecord(int n) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int n = 2;
+        CheckRecordII checkRecordII = new CheckRecordII();
+        int result = checkRecordII.checkRecord(n);
+        AlgorithmUtil.println(result);
     }
 }

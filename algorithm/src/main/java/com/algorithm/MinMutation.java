@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 一条基因序列由一个带有8个字符的字符串表示，其中每个字符都属于 "A", "C", "G", "T"中的任意一个。
  *
@@ -45,10 +47,16 @@ package com.algorithm;
  */
 public class MinMutation {
     public int minMutation(String start, String end, String[] bank) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        String start = "AACCGGTT";
+        String end = "AAACGGTA";
+        String[] bank = new String[]{"AACCGGTA", "AACCGCTA", "AAACGGTA"};
+        MinMutation minMutation = new MinMutation();
+        int result = minMutation.minMutation(start, end, bank);
+        AlgorithmUtil.println(result);
     }
 }

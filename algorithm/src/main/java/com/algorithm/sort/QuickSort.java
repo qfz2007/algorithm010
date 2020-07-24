@@ -16,6 +16,7 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-
+        QuickSort quickSort = new QuickSort();
+        quickSort.quickSort();
     }
 }

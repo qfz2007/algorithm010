@@ -1,5 +1,9 @@
 package com.algorithm.list;
 
+import com.algorithm.define.ListNode;
+import com.algorithm.util.AlgorithmUtil;
+import com.algorithm.util.TreeUtil;
+
 /**
  * 反转一个单链表。
  *
@@ -14,11 +18,18 @@ package com.algorithm.list;
  */
 public class ReverseLinkedList {
     public ListNode reverseList(ListNode head) {
-
+        ListNode listNode = null;
+        return listNode;
     }
 
 
     public static void main(String[] args) {
-
+        Integer[] nums = new Integer[]{
+                1,2,3,4,5,null
+        };
+        ListNode head = TreeUtil.generateListNode(nums);
+        ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
+        ListNode result = reverseLinkedList.reverseList(head);
+        AlgorithmUtil.println(result);
     }
 }

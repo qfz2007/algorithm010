@@ -1,5 +1,7 @@
 package com.algorithm.dp;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  *一条包含字母 A-Z 的消息通过以下方式进行了编码：
  *
@@ -123,6 +125,6 @@ public class NumDecodings {
         String s = "226";
         NumDecodings numDecodings = new NumDecodings();
         int result = numDecodings.numDecodings(s);
-        System.out.println(result);
+        AlgorithmUtil.println(result);
     }
 }

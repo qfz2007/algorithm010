@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 在二维网格 grid 上，有 4 种类型的方格：
  *
@@ -50,10 +52,18 @@ package com.algorithm;
  */
 public class UniquePathsIII {
     public int uniquePathsIII(int[][] grid) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[][] grid = new int[][]{
+                {1,0,0,0},
+                {0,0,0,0},
+                {0,0,2,-1}
+        };
+        UniquePathsIII uniquePathsIII = new UniquePathsIII();
+        int result = uniquePathsIII.uniquePathsIII(grid);
+        AlgorithmUtil.println(result);
     }
 }

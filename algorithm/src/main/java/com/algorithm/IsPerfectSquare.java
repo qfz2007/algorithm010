@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个正整数 num，编写一个函数，如果 num 是一个完全平方数，则返回 True，否则返回 False。
  *
@@ -19,10 +21,14 @@ package com.algorithm;
  */
 public class IsPerfectSquare {
     public boolean isPerfectSquare(int num) {
-
+        boolean result = false;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int num = 16;
+        IsPerfectSquare isPerfectSquare = new IsPerfectSquare();
+        boolean result = isPerfectSquare.isPerfectSquare(num);
+        AlgorithmUtil.println(result);
     }
 }

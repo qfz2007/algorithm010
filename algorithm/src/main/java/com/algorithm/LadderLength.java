@@ -1,5 +1,9 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -43,10 +47,17 @@ import java.util.List;
  */
 public class LadderLength {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        String beginWord = "hit";
+        String endWord = "cog";
+        String[] words = new String[]{"hot","dot","dog","lot","log"};
+        List<String> wordList = Arrays.asList(words);
+        LadderLength ladderLength = new LadderLength();
+        int result = ladderLength.ladderLength(beginWord, endWord, wordList);
+        AlgorithmUtil.println(result);
     }
 }

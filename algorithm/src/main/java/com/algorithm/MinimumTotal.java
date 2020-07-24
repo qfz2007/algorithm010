@@ -1,5 +1,10 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -30,10 +35,20 @@ import java.util.List;
  */
 public class MinimumTotal {
     public int minimumTotal(List<List<Integer>> triangle) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[][] ints = new int[][]{
+                {2},
+                {3,4},
+                {6,5,7},
+                {4,1,8,3},
+        };
+        List<List<Integer>> triangle = AlgorithmUtil.asList(ints);
+        MinimumTotal minimumTotal = new MinimumTotal();
+        int result = minimumTotal.minimumTotal(triangle);
+        AlgorithmUtil.println(result);
     }
 }

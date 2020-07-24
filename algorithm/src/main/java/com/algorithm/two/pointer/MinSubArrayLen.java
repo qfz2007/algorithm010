@@ -1,5 +1,7 @@
 package com.algorithm.two.pointer;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.*;
 
 /**
@@ -41,5 +43,14 @@ public class MinSubArrayLen {
         }
 
         return minLength;
+    }
+
+    public static void main(String[] args) {
+        int s = 7; int[] nums = new int[]{
+                2,3,1,2,4,3
+        };
+        MinSubArrayLen minSubArrayLen = new MinSubArrayLen();
+        int result = minSubArrayLen.minSubArrayLen(s, nums);
+        AlgorithmUtil.println(result);
     }
 }

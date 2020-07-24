@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个数组，它的第 i 个元素是一支给定的股票在第 i 天的价格。
  *
@@ -24,10 +26,14 @@ package com.algorithm;
  */
 public class MaxProfitIV {
     public int maxProfit(int k, int[] prices) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int k = 2; int[] prices = new int[]{2,4,1};
+        MaxProfitIV maxProfitIV = new MaxProfitIV();
+        int result = maxProfitIV.maxProfit(k, prices);
+        AlgorithmUtil.println(result);
     }
 }

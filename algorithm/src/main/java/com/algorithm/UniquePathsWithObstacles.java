@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。
  *
@@ -30,10 +32,19 @@ package com.algorithm;
  */
 public class UniquePathsWithObstacles {
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
+        int[][] obstacleGrid = new int[][]{
+                {0,0,0},
+                {0,1,0},
+                {0,0,0}
+        };
 
+        UniquePathsWithObstacles uniquePathsWithObstacles = new UniquePathsWithObstacles();
+        int result = uniquePathsWithObstacles.uniquePathsWithObstacles(obstacleGrid);
+        AlgorithmUtil.println(result);
     }
 }

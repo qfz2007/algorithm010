@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 在一个 2 x 3 的板上（board）有 5 块砖瓦，用数字 1~5 来表示, 以及一块空缺用 0 来表示.
  *
@@ -43,10 +45,16 @@ package com.algorithm;
  */
 public class SlidingPuzzle {
     public int slidingPuzzle(int[][] board) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[][] board = new int[][]{
+                {1,2,3},{4,0,5},
+        };
+        SlidingPuzzle slidingPuzzle = new SlidingPuzzle();
+        int result = slidingPuzzle.slidingPuzzle(board);
+        AlgorithmUtil.println(result);
     }
 }

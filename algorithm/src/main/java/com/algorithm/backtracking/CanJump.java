@@ -1,5 +1,7 @@
 package com.algorithm.backtracking;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个非负整数数组，你最初位于数组的第一个位置。
  *
@@ -23,10 +25,14 @@ package com.algorithm.backtracking;
  */
 public class CanJump {
     public boolean canJump(int[] nums) {
-
+        boolean result = false;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{2,3,1,1,4};
+        CanJump canJump = new CanJump();
+        boolean result = canJump.canJump(nums);
+        AlgorithmUtil.println(result);
     }
 }

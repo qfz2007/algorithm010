@@ -1,6 +1,9 @@
 package com.algorithm.array;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.Arrays;
+import java.util.Collections;
 
 /**
  * 学校在拍年度纪念照时，一般要求学生按照 非递减 的高度顺序排列。
@@ -77,6 +80,9 @@ public class HeightChecker {
     }
 
     public static void main(String[] args) {
-
+        int[] heights = new int[]{5,1,2,3,4};
+        HeightChecker heightChecker = new HeightChecker();
+        int result = heightChecker.heightChecker(heights);
+        AlgorithmUtil.println(result);
     }
 }

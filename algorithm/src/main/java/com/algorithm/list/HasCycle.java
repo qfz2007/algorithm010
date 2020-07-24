@@ -1,5 +1,9 @@
 package com.algorithm.list;
 
+import com.algorithm.define.ListNode;
+import com.algorithm.util.AlgorithmUtil;
+import com.algorithm.util.TreeUtil;
+
 /**
  * 给定一个链表，判断链表中是否有环。
  *
@@ -28,10 +32,15 @@ package com.algorithm.list;
  */
 public class HasCycle {
     public boolean hasCycle(ListNode head) {
-
+        boolean result = false;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        Integer[] nums = new Integer[]{1, 2};
+        ListNode head = TreeUtil.generateListNode(nums);
+        HasCycle hasCycle = new HasCycle();
+        boolean result = hasCycle.hasCycle(head);
+        AlgorithmUtil.println(result);
     }
 }

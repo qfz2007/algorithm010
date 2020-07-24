@@ -1,5 +1,9 @@
 package com.algorithm.list;
 
+import com.algorithm.define.ListNode;
+import com.algorithm.util.AlgorithmUtil;
+import com.algorithm.util.TreeUtil;
+
 /**
  * 给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。
  *
@@ -30,10 +34,15 @@ package com.algorithm.list;
  */
 public class DetectCycle {
     public ListNode detectCycle(ListNode head) {
-
+        ListNode result = null;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        Integer[] nums = new Integer[]{1, 2};
+        ListNode head = TreeUtil.generateListNode(nums);
+        DetectCycle detectCycle = new DetectCycle();
+        ListNode result = detectCycle.detectCycle(head);
+        AlgorithmUtil.println(result);
     }
 }

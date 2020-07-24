@@ -1,5 +1,7 @@
 package com.algorithm.array;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。
  *
@@ -67,6 +69,6 @@ public class MoveZeroes {
         int[] nums = new int[]{4,2,4,0,0,3,0,5,1,0};
         MoveZeroes moveZeroes = new MoveZeroes();
         moveZeroes.moveZeroesOrder(nums);
-        System.out.println(nums.length);
+        AlgorithmUtil.println(nums.length);
     }
 }

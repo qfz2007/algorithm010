@@ -17,6 +17,10 @@ package com.algorithm.dp;
  * 解释: 因为路径 1→3→1→1→1 的总和最小。
  */
 
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.Collections;
+
 /**
  * 思考动态规划问题的四个步骤
  * 1、问题拆解，找到问题之间的具体联系
@@ -101,18 +105,8 @@ public class MinPathSum {
             {4, 2, 1}
         };
 
-        for(int i = 0; i < grid.length; i++){
-            StringBuilder stringBuilder = new StringBuilder();
-
-            for(int j = 0; j < grid[i].length; j++){
-                stringBuilder.append(grid[i][j]).append(" ");
-            }
-
-            System.out.println(stringBuilder.toString());
-        }
-
         MinPathSum minPathSum = new MinPathSum();
         int result = minPathSum.minPathSum(grid);
-        System.out.println(result);
+        AlgorithmUtil.println(result);
     }
 }

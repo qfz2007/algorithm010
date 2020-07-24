@@ -11,11 +11,13 @@ public class MergeSort {
     /**
      * 归并排序
      */
-    public void mergeSort(){
+    public void mergeSort(int[] nums){
 
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{};
+        MergeSort mergeSort = new MergeSort();
+        mergeSort.mergeSort(nums);
     }
 }

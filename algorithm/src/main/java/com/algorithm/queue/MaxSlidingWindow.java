@@ -1,5 +1,7 @@
 package com.algorithm.queue;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个数组 nums，有一个大小为 k 的滑动窗口从数组的最左侧移动到数组的最右侧。你只可以看到在滑动窗口内的 k 个数字。滑动窗口每次只向右移动一位。
  *
@@ -39,12 +41,17 @@ package com.algorithm.queue;
  */
 public class MaxSlidingWindow {
     public int[] maxSlidingWindow(int[] nums, int k) {
-
+        int[] result = new int[]{};
+        return result;
     }
 
     /**看看是否可以堆实现*/
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{1,3,-1,-3,5,3,6,7};
+        int k = 3;
+        MaxSlidingWindow maxSlidingWindow = new MaxSlidingWindow();
+        int[] result = maxSlidingWindow.maxSlidingWindow(nums, k);
+        AlgorithmUtil.println(result);
     }
 }

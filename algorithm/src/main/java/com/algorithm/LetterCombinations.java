@@ -1,5 +1,9 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -16,10 +20,14 @@ import java.util.List;
  */
 public class LetterCombinations {
     public List<String> letterCombinations(String digits) {
-
+        List<String> result = new ArrayList<>();
+        return result;
     }
 
     public static void main(String[] args) {
-
+        String digits = "23";
+        LetterCombinations letterCombinations = new LetterCombinations();
+        List<String> result = letterCombinations.letterCombinations(digits);
+        AlgorithmUtil.println(Collections.singletonList(result));
     }
 }

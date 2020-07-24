@@ -1,5 +1,7 @@
 package com.algorithm.array;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  *给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
  *
@@ -46,6 +48,6 @@ public class Reverse {
     public static void main(String[] args) {
         Reverse reverse = new Reverse();
         long result = reverse.reverse(1534236469);
-        System.out.println("result="+result);
+        AlgorithmUtil.println(result);
     }
 }

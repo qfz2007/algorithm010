@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个非负整数数组和一个整数 m，你需要将这个数组分成 m 个非空的连续子数组。设计一个算法使得这 m 个子数组各自和的最大值最小。
  *
@@ -27,10 +29,15 @@ package com.algorithm;
  */
 public class SplitArray {
     public int splitArray(int[] nums, int m) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{7,2,5,10,8};
+        int m = 2;
+        SplitArray splitArray = new SplitArray();
+        int result = splitArray.splitArray(nums, m);
+        AlgorithmUtil.println(result);
     }
 }

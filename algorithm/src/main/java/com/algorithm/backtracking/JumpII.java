@@ -1,5 +1,9 @@
 package com.algorithm.backtracking;
 
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.Collections;
+
 /**
  * 给定一个非负整数数组，你最初位于数组的第一个位置。
  *
@@ -22,10 +26,14 @@ package com.algorithm.backtracking;
  */
 public class JumpII {
     public int jump(int[] nums) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{2,3,1,1,4};
+        JumpII jumpII = new JumpII();
+        int result = jumpII.jump(nums);
+        AlgorithmUtil.println(result);
     }
 }

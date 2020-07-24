@@ -1,5 +1,7 @@
 package com.algorithm.array;
 
+import com.algorithm.util.AlgorithmUtil;
+
 /**
  * 给定一个排序数组，你需要在 原地 删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
  *
@@ -46,10 +48,14 @@ package com.algorithm.array;
  */
 public class RemoveDuplicates {
     public int removeDuplicates(int[] nums) {
-
+        int result = 0;
+        return result;
     }
 
     public static void main(String[] args) {
-
+        int[] nums = new int[]{1,1,2};
+        RemoveDuplicates removeDuplicates = new RemoveDuplicates();
+        int result = removeDuplicates.removeDuplicates(nums);
+        AlgorithmUtil.println(result);
     }
 }

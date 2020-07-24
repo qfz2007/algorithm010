@@ -1,5 +1,10 @@
 package com.algorithm;
 
+import com.algorithm.util.AlgorithmUtil;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -44,7 +49,19 @@ import java.util.List;
  */
 public class FindLadders {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
-
+        List<List<String>> result = new ArrayList<>();
+        return result;
     }
 
+    public static void main(String[] args) {
+        String beginWord = "hit";
+        String endWord = "cog";
+        String[] words = new String[]{
+                "hot","dot","dog","lot","log"
+        };
+        List<String> wordList = Arrays.asList(words);
+        FindLadders findLadders = new FindLadders();
+        List<List<String>> result = findLadders.findLadders(beginWord, endWord, wordList);
+        AlgorithmUtil.println(Collections.singletonList(result));
+    }
 }

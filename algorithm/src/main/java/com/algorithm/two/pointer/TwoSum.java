@@ -1,5 +1,7 @@
 package com.algorithm.two.pointer;
 
+import com.algorithm.util.AlgorithmUtil;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -54,5 +56,15 @@ public class TwoSum {
         }
 
         return twoSum;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{
+                2, 7, 11, 15
+        };
+        int target = 9;
+        TwoSum twoSum = new TwoSum();
+        int[] result = twoSum.twoSumByPoint(nums, target);
+        AlgorithmUtil.println(result);
     }
 }
